@@ -1,0 +1,38 @@
+ float_features = [float(x) for x in request.form.values()]  # convert integer into floats
+    features = [np.array(float_features)]  # convert floats into array and store
+    prediction = model.predict(features)
+
+    return render_template("predict.html", prediction_text="This person has {}".format(prediction))
+
+
+
+data1 = request.form['radius_mean']
+    data2 = request.form['texture_mean']
+    data3 = request.form['perimeter_mean']
+    data4 = request.form['area_mean']
+    data5 = request.form['smoothness_mean']
+    data6 = request.form['compactness_mean']
+    data7 = request.form['concavity_mean']
+    data8 = request.form['concave points_mean']
+    arr = np.array([[data1, data2, data3, data4, data5, data6, data7, data8]])
+    prediction = model.predict(arr)
+    return render_template(('predict.html', prediction))
+
+
+
+
+
+
+
+ <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('home')}}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('predict')}}">Predict</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('treatments')}}">Treatments</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('lifestyle')}}">Life Style</a>
+            </li>

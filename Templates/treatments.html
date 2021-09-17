@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BCare</title>
+  <link rel="stylesheet" href="{{ url_for('static',filename='Styles.css') }}">
+
+
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+</head>
+
+<body>
+  <header class="header">
+
+    <nav class="navbar navbar-style">
+      <div class="container">
+        <div class="navbar-header">
+
+          <a class="navbar-brand" href="#">
+            <h3>BCare</h3>
+          </a>
+        </div>
+
+        <nav class="navbar navbar-expand-sm bg-light justify-content-right">
+          <ul class="navbar-nav">
+           <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('home')}}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('predict')}}">Predict</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('treatments')}}">Treatments</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('lifestyle')}}">Life Style</a>
+            </li>
+
+          </ul>
+        </nav>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="topic">How is Breast Cancer Treated?</p>
+          <p class="text">
+            Breast cancer is treated in several ways. It depends on the kind of breast cancer and how far it has spread.
+            People with breast cancer often get more than one kind of treatment.<br><br>
+            1.Surgery<br>
+            2.Chemotherapy<br>
+            3.Hormonal therapy<br>
+            4.Biological therapy<br>
+            5.Radiation therapy<br>
+
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <img src="{{url_for('static', filename='Images/img2.jpg')}}" class="float-right">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <p class="topic">Surgery</p>
+          <p class="text">
+            Surgery is the removal of the tumor and some surrounding healthy tissue during an operation. Surgery is also
+            used to examine the nearby axillary lymph nodes,
+            which are under the arm. A surgical oncologist is a doctor who specializes in treating cancer with surgery.
+            <br>
+            There are many reasons to have surgery:<br> &nbsp;
+            &nbsp;• To diagnose cancer<br> &nbsp;
+            &nbsp;• To remove all or some of a cancer<br> &nbsp;
+            &nbsp;• To find out where the cancer is located<br> &nbsp;
+            &nbsp;• To restore the body's appearance or function<br> &nbsp;
+            &nbsp;• To relieve side effects<br> &nbsp;
+            &nbsp;• To find out if the cancer has spread or is affecting the functions of other organs in the body
+          </p>
+
+
+          <p class="topic-1">Types of Surgery</p>
+          <p class="text">
+
+            • Diagnostic - For most types of cancer, a biopsy is the main way to diagnose cancer. During a surgical
+            biopsy, the surgeon makes a cut, called an incision, into the skin. Then, he or she removes some or all of
+            the suspicious tissue.There are 2 main types of surgical biopsies:An incisional biopsy removes a piece of
+            the suspicious area to study.An excisional biopsy removes the whole suspicious area, such as a mole or a
+            lump.<br><br>
+            • Staging - Staging surgery is used to find out the size of the tumor and if or where the cancer has
+            spread.<br><br>
+            • Tumor Removal - also called curative or primary surgery. Surgery is most commonly used to remove the tumor
+            and some of the nearby healthy tissue. The tissue around the tumor is called the margin.
+            Tumor removal may be the only treatment. Or it may be used with other treatments, such as chemotherapy or
+            radiation therapy.<br><br>
+            • Debulking - Sometimes, the surgeon cannot remove the entire tumor. Or removing it might cause too much
+            damage to the body. In these cases, surgery is used to remove as much of the tumor as possible.<br><br>
+            • Palliation - Palliative surgery relieves side effects caused by a tumor. It greatly improves the quality
+            of life for people with advanced cancer or widespread disease.<br><br>
+            • Reconstruction - After the main surgery to remove a tumor, people may choose to have another surgery to
+            restore the body's appearance or function. This is called reconstructive or plastic surgery.<br><br>
+            Types of minimally invasive surgery - Laparoscopic surgery,Laser surgery,Cryosurgery,Mohs micrographic
+            surgery,Endoscopy
+
+          </p>
+          <p class="topic">Radiation therapy</p>
+          <p class="text">
+            Radiation therapy is the use of high-energy x-rays or other particles to destroy cancer cells. A doctor who
+            specializes in giving radiation therapy to treat cancer is called a radiation oncologist. There are several
+            different types of radiation therapy:<br><br>
+            • External-beam radiation therapy <br> • Intra-operative radiation therapy<br> • Brachytherapy<br> •
+            Adjuvant radiation therapy <br> • Neoadjuvant radiation therapy <br>
+
+
+          <p class="topic">Therapies using medication</p>
+          <p class="text">
+            Systemic therapy is the use of medication to destroy cancer cells. Medications circulate through the body
+            and therefore can reach cancer cells throughout the body. Systemic therapies are generally prescribed by a
+            medical oncologist, a doctor who specializes in treating cancer with medication.
+            Common ways to give systemic therapies include an intravenous (IV) tube placed into a vein using a needle,
+            an injection into a muscle or under the skin, or in a pill or capsule that is swallowed (orally).The types
+            of systemic therapies used for breast cancer include:<br><br>
+            • Chemotherapy <br>
+            • Hormonal therapy<br>
+            • Targeted therapy<br>
+            • Immunotherapy <br><br><br>
+
+
+          </p>
+
+
+
+
+
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+  </header><br><br><br><br><br>
+
+  <div class="footer">
+    <p>CopyRight@2021 | BCare</p>
+  </div>
+
+
+
+
+
+</body>
+
+</html>

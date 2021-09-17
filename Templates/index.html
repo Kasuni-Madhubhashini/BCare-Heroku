@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BCare</title>
+  <link rel="stylesheet" href="{{ url_for('static',filename='Styles.css') }}">
+
+
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+</head>
+
+<body>
+  <header class="header">
+
+    <nav class="navbar navbar-style">
+      <div class="container">
+        <div class="navbar-header">
+
+          <a class="navbar-brand" href="#">
+            <h3>BCare</h3>
+          </a>
+        </div>
+
+        <nav class="navbar navbar-expand-sm bg-light justify-content-right">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('home')}}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('predict')}}">Predict</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('treatments')}}">Treatments</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('lifestyle')}}">Life Style</a>
+            </li>
+            
+          </ul>
+        </nav>
+      </div>
+    </nav>
+
+
+  </header>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm 6 banner-info">
+        <p class="big-text">Welcome to</p>
+        <p class="big-text">BCare</p>
+        <p class="s-text">Lets Check Your Breast Health</p>
+          <a class="btn" href="{{ url_for('predict')}}">Start Predict</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <p class="topic">What is a Breast Cancer?</p>
+      <p class="text">Breast cancer is a disease in which the cells of the breast grow out of control. There are
+        different
+        types of breast cancer. The type of breast cancer depends on which cells in the breast become
+        cancerous. Breast cancer can start in different parts of the breast. A breast is made up of three
+        main parts: lobules, ducts, and connective tissue. Lobules are the glands that make milk. The
+        ducts are tubes that carry milk to the nipple. Connective tissue (consisting of fibrous and fatty
+        tissue) surrounds and holds everything together. Most breast cancers start in the ducts or
+        lobules. Breast cancer can spread outside of the breast through blood vessels and lymphatic
+        vessels. If breast cancer spreads to other parts of the body, it is said to be metastatic.</p>
+    </div>
+    <div class="row">
+      <p class="topic">Types of Breast Cancer</p>
+      <p class="text">
+      1.Benign Breast Cancer (Non-Invasive)<br><br>
+        That kind of cancer does not spread to neighboring tissue regions and therefore it is rarely life
+        threatening. These cells remain completely at their place of origin because they haven't already
+        developed the ability to spread out of these ducts, either within the breast or in another part of
+        the body. The Cancer cells most often develop in milk ducts and therefore it is also known as
+        ductal carcinoma Cancer in situ (DCIS). Both men and women can Develop DCIS.<br><br>
+        2. Malignant Breast Cancer (Invasive)<br><br>
+        Malignant or Invasive is the type of cancer which have Possibility of spreading from the breast to
+        other parts of the body and life threatening. It can often be removed but sometimes it grows
+        back. The most common type of Invasive breast cancer is invasive ductal cancer. These accounts
+        for 80% of all breast cancer case<br><br>
+    3. Other types of Breast Cancer<br><br>
+        The least common type of breast cancer includes the invasive lobular breast cancer that develops
+        in the cells of the milk-producing lobules, inflammatory breast cancer, tubular breast cancer,
+        medullary and papillary breast cancer</p>
+    </div>
+    <div class="row">
+      <p class="topic">Symptoms of Breast Cancer</p>
+      <p class="text">• New lump in the breast or underarm (armpit).<br>
+        • Any change in the size or the shape of the breast.<br>
+        • Thickening or swelling of part of the breast.<br>
+        • Irritation or dimpling of breast skin. (like orange peel)<br>
+        • Redness or flaky skin in the nipple area or the breast.<br>
+        • Pulling in of the nipple or pain in the nipple area and Nipple discharge other than breast milk, including
+        blood.
+      </p>
+
+    </div>
+
+
+    
+<br><br>
+  </div><br><br><br><br>
+  <div class="footer">
+    <p>CopyRight@2021 | BCare</p>
+  </div>
+
+</body>
+</html>
